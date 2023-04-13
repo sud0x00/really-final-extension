@@ -49,7 +49,7 @@ const Puppy = async (url) => {
         .join(" ");
     });
 
-    fs.writeFile("./python/content.json", JSON.stringify(pageText), (err) => {
+    fs.writeFile("content.json", JSON.stringify(pageText), (err) => {
       if (err) throw err;
       console.log("Content written to file!");
     });
